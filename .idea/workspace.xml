@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="445e9607-abde-458d-88f0-1bf974fe46c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HackerRank/Sorting_Bubblesort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HackerRank/Sorting_Bubblesort.java" afterPath="$PROJECT_DIR$/src/HackerRank/Sorting_Bubblesort.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="HashTables_RansomNote.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HackerRank/HashTables_RansomNote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="322">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,8 +34,8 @@
       <file leaf-file-name="Sorting_Bubblesort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HackerRank/Sorting_Bubblesort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="13" column="91" lean-forward="false" selection-start-line="13" selection-start-column="91" selection-end-line="13" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -535,7 +535,7 @@
       <updated>1498093727357</updated>
       <workItem from="1498093728844" duration="949000" />
       <workItem from="1498094817546" duration="105000" />
-      <workItem from="1498095469998" duration="150000" />
+      <workItem from="1498095469998" duration="1145000" />
     </task>
     <task id="LOCAL-00001" summary="Solved HackerRank #1 - hashtables ransom note challenge">
       <created>1498093941701</created>
@@ -544,11 +544,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498093941701</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created class for Bubble sort">
+      <created>1498095634572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1498095634572</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1204000" />
+    <option name="totallyTimeSpent" value="2199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -592,7 +599,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Solved HackerRank #1 - hashtables ransom note challenge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved HackerRank #1 - hashtables ransom note challenge" />
+    <MESSAGE value="Created class for Bubble sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created class for Bubble sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -621,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HackerRank/HashTables_RansomNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="322">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -631,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HackerRank/Sorting_Bubblesort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="13" column="91" lean-forward="false" selection-start-line="13" selection-start-column="91" selection-end-line="13" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
