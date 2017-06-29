@@ -15,8 +15,8 @@ public class MergeSort_Inversions {
     static void startMergeSort(List<Integer> array) {
         inversions = 0;
 
-        // Although this returns a sorted list we don't actually want it, just the number of inversions
-        mergeSort(array);
+        List<Integer> sorted = mergeSort(array);
+        System.out.println(sorted.toString());
 
         System.out.println(inversions);
     }
@@ -42,7 +42,8 @@ public class MergeSort_Inversions {
             } else {
                 sorted.add(right.get(rightInd));
                 rightInd++;
-                inversions++;
+                // If rightsublist has smallest element, must move it across
+                inversions += left.size() - leftInd;
             }
         }
 

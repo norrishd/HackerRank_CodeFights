@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="445e9607-abde-458d-88f0-1bf974fe46c4" name="Default" comment="Implemented Heaps - Running Median">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HackerRank/MergeSort_Inversions.java" />
+    <list default="true" id="445e9607-abde-458d-88f0-1bf974fe46c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HackerRank/MergeSort_Inversions.java" afterPath="$PROJECT_DIR$/src/HackerRank/MergeSort_Inversions.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +68,8 @@
       <file leaf-file-name="MergeSort_Inversions.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HackerRank/MergeSort_Inversions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="383">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -518,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498375576504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented a merge sort that counts inversions that makes sense to me, but gives wrong answers apparently so must thinking further">
+      <created>1498741613640</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1498741613641</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -572,7 +579,8 @@
     <MESSAGE value="Added Java docstrings" />
     <MESSAGE value="Implemented BinarySearchTrees and Stack - Balanced Brackets" />
     <MESSAGE value="Implemented Heaps - Running Median" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Heaps - Running Median" />
+    <MESSAGE value="Implemented a merge sort that counts inversions that makes sense to me, but gives wrong answers apparently so must thinking further" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented a merge sort that counts inversions that makes sense to me, but gives wrong answers apparently so must thinking further" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -781,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HackerRank/MergeSort_Inversions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="383">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
