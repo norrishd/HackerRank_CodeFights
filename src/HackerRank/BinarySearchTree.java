@@ -40,7 +40,7 @@ public class BinarySearchTree {
         if (max != null && root.data > max)
             return false;
 
-        // handle duplicate values (no sure this is needed)
+        // handle duplicate values (not sure this is needed)
         if (vals.contains(root.data))
             return false;
         else
