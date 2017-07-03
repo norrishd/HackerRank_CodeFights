@@ -11,49 +11,61 @@ public class Tries_Contacts {
     Node root;
 
     Tries_Contacts() {
-        root = new Node(false, "");
+        root = new Node();
     }
 
     class Node {
         HashMap<Character, Node> children;      // stores all children of this node
         boolean isCompleteWord;
+        int completeWordsFromHere;
+
+        // root node constructor
+        Node() {
+            this.isCompleteWord = false;
+            this.completeWordsFromHere = 0;
+            children = new HashMap<>();
+        }
 
         Node(boolean completeWord, String wordToAdd) {
+            System.out.println("making new node");
             this.isCompleteWord = completeWord;
             children = new HashMap<>();
 
             // might need to generate nodes multiple layers deeper
-            if (wordToAdd.length() > 0)
+            if (wordToAdd.length() > 0) {
+                this.completeWordsFromHere = 0;
                 addWord(wordToAdd);
+            } else {
+                this.completeWordsFromHere = 1;
+            }
+
         }
 
         // method to build a new word into the try
         void addWord(String word) {
 
-            // if no further letters left, have completed a word so this node must represent a valid word
-            if (word.length() == 0)
-                this.isCompleteWord = true;
+            System.out.println("In addWord");
 
-            // otherwise, more letters to get through
-            if (children.containsKey(word.charAt(0))) {
+            // if no further letters left, have completed a word so this node must represent a valid word
+            if (word.length() == 0) {
+                this.isCompleteWord = true;
+                // otherwise, more letters to get through
+            } else if (children.containsKey(word.charAt(0))) {
                 Node nextLetter = children.get(word.charAt(0));
                 // move along one and pass in the substring
                 nextLetter.addWord(word.substring(1));
             } else {
-                // adding new letter(s) to the trie
-                if (word.length() == 1)
-                    // next letter is final
-                    children.put(word.charAt(0), new Node(true, ""));
-                else
-                    children.put(word.charAt(0), new Node(false, word.substring(1)));
+                children.put(word.charAt(0), new Node(false, word.substring(1)));
             }
+            this.completeWordsFromHere += 1;
+            System.out.println(completeWordsFromHere);
         }
 
         void findPrefix(String word) {
 
             // no further letters, can now count how many words this is a prefix for
             if (word.length() == 0) {
-                startCountWords();
+                System.out.println(countWords());
                 // further letters in the prefix. Make sure exists by recursing down children
             } else if (children.containsKey(word.charAt(0))) {
                 children.get(word.charAt(0)).findPrefix(word.substring(1));
@@ -62,24 +74,8 @@ public class Tries_Contacts {
             // if next letter doesn't exist, nothing contains that prefix so let the stack empty
         }
 
-        void startCountWords() {
-            int subWords = this.isCompleteWord? 1 : 0;
-            for (Node node : children.values()) {
-                subWords += node.countWords();
-            }
-            System.out.println(subWords);
-        }
-
-
         int countWords() {
-            // if this is a complete word, count that
-            int subWords = this.isCompleteWord? 1 : 0;
-
-            // then find all children with complete words
-            for (Node node : children.values()) {
-                subWords += node.countWords();
-            }
-            return subWords;
+            return completeWordsFromHere;
         }
     }
 
